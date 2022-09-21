@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolioWebsit';
+  constructor(public router: Router)
+  {}
+  aboutMe()
+  {
+    this.router.navigate(['about']);
+  }
+  contactInfo()
+  {
+    this.router.navigate(['contact']);
+  }
+  skills()
+  {
+    this.router.navigate(['skills']);
+  }
+  experience()
+  {
+    this.router.navigate(["experience"])
+  }
+  recommendations()
+  {
+    this.router.navigate(["recommendations"])
+  }
 }

@@ -1,0 +1,38 @@
+<div class="card col-sm-11 mx-auto mt-5 " >
+    
+    <div class="card-header">
+        <div class="card-horizontal ">
+            <div class=" img-square-wrapper mx-2">
+              <img src="../../assets/image.png" alt="..." width="50" height="50" class="rounded">        
+            </div>
+            <h5 class="card-title d-flex mx-2">About Me:</h5>
+          </div>
+        
+    </div>
+    <div class="card-body">
+        <app-contact-info></app-contact-info>
+        <!-- <div class=" d-flex justify-content-around">
+          <div class="p-2 d-flex">
+            <h6 class="p-2 "> Designation : </h6>
+            <div class="p-2"> {{user.DESIGNATION}}</div>
+          </div>
+          <div class="p-2 d-flex">
+            <h6 class="p-2"> Discom : </h6>
+            <div class="p-2"> {{user.UPPCL}}</div>
+          </div>
+          
+      
+        </div> -->
+        <br>
+        <li class="list-group-item d-flex">
+            <h6 class="col-2 mx-4">Summary:</h6>
+            <div class="col-8">{{user.Summary}}</div>
+        </li>
+       <app-skills></app-skills>
+       <app-experience></app-experience>
+       <app-recommendations></app-recommendations>
+    </div>
+    <div class="card-footer">
+      Have a nice day!
+    </div>
+  </div>
